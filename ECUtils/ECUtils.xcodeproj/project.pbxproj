@@ -8,12 +8,193 @@
 
 /* Begin PBXBuildFile section */
 		4B83B3781D60DFA4006CDEB6 /* ECUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B3771D60DFA4006CDEB6 /* ECUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4CB1D60E340006CDEB6 /* RFBeanClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4511D60E340006CDEB6 /* RFBeanClass.h */; };
+		4B83B4CC1D60E340006CDEB6 /* RFBeanClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4521D60E340006CDEB6 /* RFBeanClass.m */; };
+		4B83B4CD1D60E340006CDEB6 /* RFBeanProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4531D60E340006CDEB6 /* RFBeanProperty.h */; };
+		4B83B4CE1D60E340006CDEB6 /* RFBeanProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4541D60E340006CDEB6 /* RFBeanProperty.m */; };
+		4B83B4CF1D60E340006CDEB6 /* RFBeanPropertyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4551D60E340006CDEB6 /* RFBeanPropertyAnnotation.h */; };
+		4B83B4D01D60E340006CDEB6 /* RFBeanPropertyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4561D60E340006CDEB6 /* RFBeanPropertyAnnotation.m */; };
+		4B83B4D11D60E340006CDEB6 /* RFBeanProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4571D60E340006CDEB6 /* RFBeanProtocol.h */; };
+		4B83B4D21D60E340006CDEB6 /* RFBeanProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4581D60E340006CDEB6 /* RFBeanProtocol.m */; };
+		4B83B4D31D60E340006CDEB6 /* RFBeanUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4591D60E340006CDEB6 /* RFBeanUtil.h */; };
+		4B83B4D41D60E340006CDEB6 /* RFBeanUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B45A1D60E340006CDEB6 /* RFBeanUtil.m */; };
+		4B83B4D51D60E340006CDEB6 /* RFJSONObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B45B1D60E340006CDEB6 /* RFJSONObject.h */; };
+		4B83B4D61D60E340006CDEB6 /* RFJSONPropertyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B45C1D60E340006CDEB6 /* RFJSONPropertyAnnotation.h */; };
+		4B83B4D71D60E340006CDEB6 /* RFJSONPropertyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B45D1D60E340006CDEB6 /* RFJSONPropertyAnnotation.m */; };
+		4B83B4D81D60E340006CDEB6 /* RFJSONUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B45E1D60E340006CDEB6 /* RFJSONUtil.h */; };
+		4B83B4D91D60E340006CDEB6 /* RFJSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B45F1D60E340006CDEB6 /* RFJSONUtil.m */; };
+		4B83B4DA1D60E340006CDEB6 /* NSData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4611D60E340006CDEB6 /* NSData+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4DB1D60E340006CDEB6 /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4621D60E340006CDEB6 /* NSData+Utils.m */; };
+		4B83B4DC1D60E340006CDEB6 /* NSDate+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4631D60E340006CDEB6 /* NSDate+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4DD1D60E340006CDEB6 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4641D60E340006CDEB6 /* NSDate+Utils.m */; };
+		4B83B4DE1D60E340006CDEB6 /* NSDictionary+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4651D60E340006CDEB6 /* NSDictionary+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4DF1D60E340006CDEB6 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4661D60E340006CDEB6 /* NSDictionary+Utils.m */; };
+		4B83B4E01D60E340006CDEB6 /* NSFileManager+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4671D60E340006CDEB6 /* NSFileManager+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4E11D60E340006CDEB6 /* NSFileManager+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4681D60E340006CDEB6 /* NSFileManager+Utils.m */; };
+		4B83B4E21D60E340006CDEB6 /* NSNull+Protection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4691D60E340006CDEB6 /* NSNull+Protection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4E31D60E340006CDEB6 /* NSNull+Protection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B46A1D60E340006CDEB6 /* NSNull+Protection.m */; };
+		4B83B4E41D60E340006CDEB6 /* NSString+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B46B1D60E340006CDEB6 /* NSString+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4E51D60E340006CDEB6 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B46C1D60E340006CDEB6 /* NSString+Utils.m */; };
+		4B83B4E61D60E340006CDEB6 /* NSTimer+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B46D1D60E340006CDEB6 /* NSTimer+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4E71D60E340006CDEB6 /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B46E1D60E340006CDEB6 /* NSTimer+Block.m */; };
+		4B83B4E81D60E340006CDEB6 /* RFBlockAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B46F1D60E340006CDEB6 /* RFBlockAction.h */; };
+		4B83B4E91D60E340006CDEB6 /* RFBlockAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4701D60E340006CDEB6 /* RFBlockAction.m */; };
+		4B83B4F01D60E340006CDEB6 /* RFPinyinTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4771D60E340006CDEB6 /* RFPinyinTable.h */; };
+		4B83B4F11D60E340006CDEB6 /* RFPinyinUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4781D60E340006CDEB6 /* RFPinyinUtil.h */; };
+		4B83B4F21D60E340006CDEB6 /* RFPinyinUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4791D60E340006CDEB6 /* RFPinyinUtil.m */; };
+		4B83B4F31D60E340006CDEB6 /* RFPureCUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B47A1D60E340006CDEB6 /* RFPureCUtil.h */; };
+		4B83B4F41D60E340006CDEB6 /* RFPureCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B47B1D60E340006CDEB6 /* RFPureCUtil.m */; };
+		4B83B4F51D60E340006CDEB6 /* RFResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B47C1D60E340006CDEB6 /* RFResourceLoader.h */; };
+		4B83B4F61D60E340006CDEB6 /* RFResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B47D1D60E340006CDEB6 /* RFResourceLoader.m */; };
+		4B83B4F71D60E340006CDEB6 /* RFSwiftUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B47E1D60E340006CDEB6 /* RFSwiftUtil.h */; };
+		4B83B4F81D60E340006CDEB6 /* RFSwiftUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B47F1D60E340006CDEB6 /* RFSwiftUtil.m */; };
+		4B83B4FD1D60E340006CDEB6 /* ECApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4851D60E340006CDEB6 /* ECApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B4FE1D60E340006CDEB6 /* ECApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4861D60E340006CDEB6 /* ECApplication.m */; };
+		4B83B4FF1D60E340006CDEB6 /* RFBlockActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4871D60E340006CDEB6 /* RFBlockActionSheet.h */; };
+		4B83B5001D60E340006CDEB6 /* RFBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4881D60E340006CDEB6 /* RFBlockActionSheet.m */; };
+		4B83B5011D60E340006CDEB6 /* RFBlockAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4891D60E340006CDEB6 /* RFBlockAlertView.h */; };
+		4B83B5021D60E340006CDEB6 /* RFBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B48A1D60E340006CDEB6 /* RFBlockAlertView.m */; };
+		4B83B5031D60E340006CDEB6 /* RFBlockImagePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B48B1D60E340006CDEB6 /* RFBlockImagePickerViewController.h */; };
+		4B83B5041D60E340006CDEB6 /* RFBlockImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B48C1D60E340006CDEB6 /* RFBlockImagePickerViewController.m */; };
+		4B83B5081D60E340006CDEB6 /* RFCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4901D60E340006CDEB6 /* RFCollectionViewCell.h */; };
+		4B83B5091D60E340006CDEB6 /* RFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4911D60E340006CDEB6 /* RFCollectionViewCell.m */; };
+		4B83B50A1D60E340006CDEB6 /* RFInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4921D60E340006CDEB6 /* RFInputView.h */; };
+		4B83B50B1D60E340006CDEB6 /* RFInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4931D60E340006CDEB6 /* RFInputView.m */; };
+		4B83B50C1D60E340006CDEB6 /* RFLoadMoreCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4941D60E340006CDEB6 /* RFLoadMoreCell.h */; };
+		4B83B50D1D60E340006CDEB6 /* RFLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4951D60E340006CDEB6 /* RFLoadMoreCell.m */; };
+		4B83B5111D60E340006CDEB6 /* RFNibUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4991D60E340006CDEB6 /* RFNibUtil.h */; };
+		4B83B5121D60E340006CDEB6 /* RFNibUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B49A1D60E340006CDEB6 /* RFNibUtil.m */; };
+		4B83B5151D60E340006CDEB6 /* RFPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B49D1D60E340006CDEB6 /* RFPresentationController.h */; };
+		4B83B5161D60E340006CDEB6 /* RFPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B49E1D60E340006CDEB6 /* RFPresentationController.m */; };
+		4B83B5171D60E340006CDEB6 /* RFProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B49F1D60E340006CDEB6 /* RFProgressView.h */; };
+		4B83B5181D60E340006CDEB6 /* RFProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4A01D60E340006CDEB6 /* RFProgressView.m */; };
+		4B83B5191D60E340006CDEB6 /* RFRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4A11D60E340006CDEB6 /* RFRootViewController.h */; };
+		4B83B51A1D60E340006CDEB6 /* RFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4A21D60E340006CDEB6 /* RFRootViewController.m */; };
+		4B83B51B1D60E340006CDEB6 /* RFRoundProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4A31D60E340006CDEB6 /* RFRoundProgressView.h */; };
+		4B83B51C1D60E340006CDEB6 /* RFRoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4A41D60E340006CDEB6 /* RFRoundProgressView.m */; };
+		4B83B51D1D60E340006CDEB6 /* RFRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4A51D60E340006CDEB6 /* RFRow.h */; };
+		4B83B51E1D60E340006CDEB6 /* RFRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4A61D60E340006CDEB6 /* RFRow.m */; };
+		4B83B51F1D60E340006CDEB6 /* RFSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4A71D60E340006CDEB6 /* RFSection.h */; };
+		4B83B5201D60E340006CDEB6 /* RFSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4A81D60E340006CDEB6 /* RFSection.m */; };
+		4B83B5211D60E340006CDEB6 /* RFSidebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4A91D60E340006CDEB6 /* RFSidebar.h */; };
+		4B83B5221D60E340006CDEB6 /* RFTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4AA1D60E340006CDEB6 /* RFTabBarController.h */; };
+		4B83B5231D60E340006CDEB6 /* RFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4AB1D60E340006CDEB6 /* RFTabBarController.m */; };
+		4B83B5241D60E340006CDEB6 /* RFTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4AC1D60E340006CDEB6 /* RFTableViewCell.h */; };
+		4B83B5251D60E340006CDEB6 /* RFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4AD1D60E340006CDEB6 /* RFTableViewCell.m */; };
+		4B83B5261D60E340006CDEB6 /* RFTableViewCellDynamicHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4AE1D60E340006CDEB6 /* RFTableViewCellDynamicHeight.h */; };
+		4B83B5271D60E340006CDEB6 /* RFTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4AF1D60E340006CDEB6 /* RFTableViewController.h */; };
+		4B83B5281D60E340006CDEB6 /* RFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4B01D60E340006CDEB6 /* RFTableViewController.m */; };
+		4B83B5311D60E340006CDEB6 /* RFToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4B91D60E340006CDEB6 /* RFToast.h */; };
+		4B83B5321D60E340006CDEB6 /* RFToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4BA1D60E340006CDEB6 /* RFToast.m */; };
+		4B83B5331D60E340006CDEB6 /* RFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4BB1D60E340006CDEB6 /* RFViewController.h */; };
+		4B83B5341D60E340006CDEB6 /* RFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4BC1D60E340006CDEB6 /* RFViewController.m */; };
+		4B83B5351D60E340006CDEB6 /* RFViewObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4BD1D60E340006CDEB6 /* RFViewObject.h */; };
+		4B83B5361D60E340006CDEB6 /* RFViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4BE1D60E340006CDEB6 /* RFViewObject.m */; };
+		4B83B5371D60E340006CDEB6 /* RFViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4BF1D60E340006CDEB6 /* RFViewUtil.h */; };
+		4B83B5381D60E340006CDEB6 /* RFViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4C01D60E340006CDEB6 /* RFViewUtil.m */; };
+		4B83B5391D60E340006CDEB6 /* UIBarButtonItem+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4C11D60E340006CDEB6 /* UIBarButtonItem+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B53A1D60E340006CDEB6 /* UIBarButtonItem+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4C21D60E340006CDEB6 /* UIBarButtonItem+Utils.m */; };
+		4B83B53B1D60E340006CDEB6 /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4C31D60E340006CDEB6 /* UIDevice+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B53C1D60E340006CDEB6 /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4C41D60E340006CDEB6 /* UIDevice+Additions.m */; };
+		4B83B53D1D60E340006CDEB6 /* UIView+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83B4C51D60E340006CDEB6 /* UIView+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B83B53E1D60E340006CDEB6 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83B4C61D60E340006CDEB6 /* UIView+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B83B3741D60DFA4006CDEB6 /* ECUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B83B3771D60DFA4006CDEB6 /* ECUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECUtils.h; sourceTree = "<group>"; };
 		4B83B3791D60DFA4006CDEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B83B4511D60E340006CDEB6 /* RFBeanClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBeanClass.h; sourceTree = "<group>"; };
+		4B83B4521D60E340006CDEB6 /* RFBeanClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBeanClass.m; sourceTree = "<group>"; };
+		4B83B4531D60E340006CDEB6 /* RFBeanProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBeanProperty.h; sourceTree = "<group>"; };
+		4B83B4541D60E340006CDEB6 /* RFBeanProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBeanProperty.m; sourceTree = "<group>"; };
+		4B83B4551D60E340006CDEB6 /* RFBeanPropertyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBeanPropertyAnnotation.h; sourceTree = "<group>"; };
+		4B83B4561D60E340006CDEB6 /* RFBeanPropertyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBeanPropertyAnnotation.m; sourceTree = "<group>"; };
+		4B83B4571D60E340006CDEB6 /* RFBeanProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBeanProtocol.h; sourceTree = "<group>"; };
+		4B83B4581D60E340006CDEB6 /* RFBeanProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBeanProtocol.m; sourceTree = "<group>"; };
+		4B83B4591D60E340006CDEB6 /* RFBeanUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBeanUtil.h; sourceTree = "<group>"; };
+		4B83B45A1D60E340006CDEB6 /* RFBeanUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBeanUtil.m; sourceTree = "<group>"; };
+		4B83B45B1D60E340006CDEB6 /* RFJSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFJSONObject.h; sourceTree = "<group>"; };
+		4B83B45C1D60E340006CDEB6 /* RFJSONPropertyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFJSONPropertyAnnotation.h; sourceTree = "<group>"; };
+		4B83B45D1D60E340006CDEB6 /* RFJSONPropertyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFJSONPropertyAnnotation.m; sourceTree = "<group>"; };
+		4B83B45E1D60E340006CDEB6 /* RFJSONUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFJSONUtil.h; sourceTree = "<group>"; };
+		4B83B45F1D60E340006CDEB6 /* RFJSONUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFJSONUtil.m; sourceTree = "<group>"; };
+		4B83B4611D60E340006CDEB6 /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		4B83B4621D60E340006CDEB6 /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		4B83B4631D60E340006CDEB6 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		4B83B4641D60E340006CDEB6 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		4B83B4651D60E340006CDEB6 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		4B83B4661D60E340006CDEB6 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		4B83B4671D60E340006CDEB6 /* NSFileManager+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utils.h"; sourceTree = "<group>"; };
+		4B83B4681D60E340006CDEB6 /* NSFileManager+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utils.m"; sourceTree = "<group>"; };
+		4B83B4691D60E340006CDEB6 /* NSNull+Protection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Protection.h"; sourceTree = "<group>"; };
+		4B83B46A1D60E340006CDEB6 /* NSNull+Protection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Protection.m"; sourceTree = "<group>"; };
+		4B83B46B1D60E340006CDEB6 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		4B83B46C1D60E340006CDEB6 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		4B83B46D1D60E340006CDEB6 /* NSTimer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
+		4B83B46E1D60E340006CDEB6 /* NSTimer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
+		4B83B46F1D60E340006CDEB6 /* RFBlockAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBlockAction.h; sourceTree = "<group>"; };
+		4B83B4701D60E340006CDEB6 /* RFBlockAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBlockAction.m; sourceTree = "<group>"; };
+		4B83B4771D60E340006CDEB6 /* RFPinyinTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPinyinTable.h; sourceTree = "<group>"; };
+		4B83B4781D60E340006CDEB6 /* RFPinyinUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPinyinUtil.h; sourceTree = "<group>"; };
+		4B83B4791D60E340006CDEB6 /* RFPinyinUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPinyinUtil.m; sourceTree = "<group>"; };
+		4B83B47A1D60E340006CDEB6 /* RFPureCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPureCUtil.h; sourceTree = "<group>"; };
+		4B83B47B1D60E340006CDEB6 /* RFPureCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPureCUtil.m; sourceTree = "<group>"; };
+		4B83B47C1D60E340006CDEB6 /* RFResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFResourceLoader.h; sourceTree = "<group>"; };
+		4B83B47D1D60E340006CDEB6 /* RFResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFResourceLoader.m; sourceTree = "<group>"; };
+		4B83B47E1D60E340006CDEB6 /* RFSwiftUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSwiftUtil.h; sourceTree = "<group>"; };
+		4B83B47F1D60E340006CDEB6 /* RFSwiftUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSwiftUtil.m; sourceTree = "<group>"; };
+		4B83B4851D60E340006CDEB6 /* ECApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECApplication.h; sourceTree = "<group>"; };
+		4B83B4861D60E340006CDEB6 /* ECApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECApplication.m; sourceTree = "<group>"; };
+		4B83B4871D60E340006CDEB6 /* RFBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBlockActionSheet.h; sourceTree = "<group>"; };
+		4B83B4881D60E340006CDEB6 /* RFBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBlockActionSheet.m; sourceTree = "<group>"; };
+		4B83B4891D60E340006CDEB6 /* RFBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBlockAlertView.h; sourceTree = "<group>"; };
+		4B83B48A1D60E340006CDEB6 /* RFBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBlockAlertView.m; sourceTree = "<group>"; };
+		4B83B48B1D60E340006CDEB6 /* RFBlockImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBlockImagePickerViewController.h; sourceTree = "<group>"; };
+		4B83B48C1D60E340006CDEB6 /* RFBlockImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBlockImagePickerViewController.m; sourceTree = "<group>"; };
+		4B83B4901D60E340006CDEB6 /* RFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCollectionViewCell.h; sourceTree = "<group>"; };
+		4B83B4911D60E340006CDEB6 /* RFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCollectionViewCell.m; sourceTree = "<group>"; };
+		4B83B4921D60E340006CDEB6 /* RFInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFInputView.h; sourceTree = "<group>"; };
+		4B83B4931D60E340006CDEB6 /* RFInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFInputView.m; sourceTree = "<group>"; };
+		4B83B4941D60E340006CDEB6 /* RFLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFLoadMoreCell.h; sourceTree = "<group>"; };
+		4B83B4951D60E340006CDEB6 /* RFLoadMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFLoadMoreCell.m; sourceTree = "<group>"; };
+		4B83B4991D60E340006CDEB6 /* RFNibUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNibUtil.h; sourceTree = "<group>"; };
+		4B83B49A1D60E340006CDEB6 /* RFNibUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNibUtil.m; sourceTree = "<group>"; };
+		4B83B49D1D60E340006CDEB6 /* RFPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPresentationController.h; sourceTree = "<group>"; };
+		4B83B49E1D60E340006CDEB6 /* RFPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPresentationController.m; sourceTree = "<group>"; };
+		4B83B49F1D60E340006CDEB6 /* RFProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFProgressView.h; sourceTree = "<group>"; };
+		4B83B4A01D60E340006CDEB6 /* RFProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFProgressView.m; sourceTree = "<group>"; };
+		4B83B4A11D60E340006CDEB6 /* RFRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRootViewController.h; sourceTree = "<group>"; };
+		4B83B4A21D60E340006CDEB6 /* RFRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRootViewController.m; sourceTree = "<group>"; };
+		4B83B4A31D60E340006CDEB6 /* RFRoundProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRoundProgressView.h; sourceTree = "<group>"; };
+		4B83B4A41D60E340006CDEB6 /* RFRoundProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRoundProgressView.m; sourceTree = "<group>"; };
+		4B83B4A51D60E340006CDEB6 /* RFRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRow.h; sourceTree = "<group>"; };
+		4B83B4A61D60E340006CDEB6 /* RFRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRow.m; sourceTree = "<group>"; };
+		4B83B4A71D60E340006CDEB6 /* RFSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSection.h; sourceTree = "<group>"; };
+		4B83B4A81D60E340006CDEB6 /* RFSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSection.m; sourceTree = "<group>"; };
+		4B83B4A91D60E340006CDEB6 /* RFSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSidebar.h; sourceTree = "<group>"; };
+		4B83B4AA1D60E340006CDEB6 /* RFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTabBarController.h; sourceTree = "<group>"; };
+		4B83B4AB1D60E340006CDEB6 /* RFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTabBarController.m; sourceTree = "<group>"; };
+		4B83B4AC1D60E340006CDEB6 /* RFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCell.h; sourceTree = "<group>"; };
+		4B83B4AD1D60E340006CDEB6 /* RFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCell.m; sourceTree = "<group>"; };
+		4B83B4AE1D60E340006CDEB6 /* RFTableViewCellDynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCellDynamicHeight.h; sourceTree = "<group>"; };
+		4B83B4AF1D60E340006CDEB6 /* RFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewController.h; sourceTree = "<group>"; };
+		4B83B4B01D60E340006CDEB6 /* RFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewController.m; sourceTree = "<group>"; };
+		4B83B4B91D60E340006CDEB6 /* RFToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFToast.h; sourceTree = "<group>"; };
+		4B83B4BA1D60E340006CDEB6 /* RFToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFToast.m; sourceTree = "<group>"; };
+		4B83B4BB1D60E340006CDEB6 /* RFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFViewController.h; sourceTree = "<group>"; };
+		4B83B4BC1D60E340006CDEB6 /* RFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFViewController.m; sourceTree = "<group>"; };
+		4B83B4BD1D60E340006CDEB6 /* RFViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFViewObject.h; sourceTree = "<group>"; };
+		4B83B4BE1D60E340006CDEB6 /* RFViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFViewObject.m; sourceTree = "<group>"; };
+		4B83B4BF1D60E340006CDEB6 /* RFViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFViewUtil.h; sourceTree = "<group>"; };
+		4B83B4C01D60E340006CDEB6 /* RFViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFViewUtil.m; sourceTree = "<group>"; };
+		4B83B4C11D60E340006CDEB6 /* UIBarButtonItem+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Utils.h"; sourceTree = "<group>"; };
+		4B83B4C21D60E340006CDEB6 /* UIBarButtonItem+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Utils.m"; sourceTree = "<group>"; };
+		4B83B4C31D60E340006CDEB6 /* UIDevice+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Additions.h"; sourceTree = "<group>"; };
+		4B83B4C41D60E340006CDEB6 /* UIDevice+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Additions.m"; sourceTree = "<group>"; };
+		4B83B4C51D60E340006CDEB6 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		4B83B4C61D60E340006CDEB6 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		4B83B53F1D60E53A006CDEB6 /* ECLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECLog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +227,125 @@
 		4B83B3761D60DFA4006CDEB6 /* ECUtils */ = {
 			isa = PBXGroup;
 			children = (
+				4B83B4501D60E340006CDEB6 /* Bean */,
+				4B83B4601D60E340006CDEB6 /* Foundation */,
+				4B83B4801D60E340006CDEB6 /* UIKit */,
 				4B83B3771D60DFA4006CDEB6 /* ECUtils.h */,
 				4B83B3791D60DFA4006CDEB6 /* Info.plist */,
 			);
 			path = ECUtils;
+			sourceTree = "<group>";
+		};
+		4B83B4501D60E340006CDEB6 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				4B83B4511D60E340006CDEB6 /* RFBeanClass.h */,
+				4B83B4521D60E340006CDEB6 /* RFBeanClass.m */,
+				4B83B4531D60E340006CDEB6 /* RFBeanProperty.h */,
+				4B83B4541D60E340006CDEB6 /* RFBeanProperty.m */,
+				4B83B4551D60E340006CDEB6 /* RFBeanPropertyAnnotation.h */,
+				4B83B4561D60E340006CDEB6 /* RFBeanPropertyAnnotation.m */,
+				4B83B4571D60E340006CDEB6 /* RFBeanProtocol.h */,
+				4B83B4581D60E340006CDEB6 /* RFBeanProtocol.m */,
+				4B83B4591D60E340006CDEB6 /* RFBeanUtil.h */,
+				4B83B45A1D60E340006CDEB6 /* RFBeanUtil.m */,
+				4B83B45B1D60E340006CDEB6 /* RFJSONObject.h */,
+				4B83B45C1D60E340006CDEB6 /* RFJSONPropertyAnnotation.h */,
+				4B83B45D1D60E340006CDEB6 /* RFJSONPropertyAnnotation.m */,
+				4B83B45E1D60E340006CDEB6 /* RFJSONUtil.h */,
+				4B83B45F1D60E340006CDEB6 /* RFJSONUtil.m */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		4B83B4601D60E340006CDEB6 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4B83B4611D60E340006CDEB6 /* NSData+Utils.h */,
+				4B83B4621D60E340006CDEB6 /* NSData+Utils.m */,
+				4B83B4631D60E340006CDEB6 /* NSDate+Utils.h */,
+				4B83B4641D60E340006CDEB6 /* NSDate+Utils.m */,
+				4B83B4651D60E340006CDEB6 /* NSDictionary+Utils.h */,
+				4B83B4661D60E340006CDEB6 /* NSDictionary+Utils.m */,
+				4B83B4671D60E340006CDEB6 /* NSFileManager+Utils.h */,
+				4B83B4681D60E340006CDEB6 /* NSFileManager+Utils.m */,
+				4B83B4691D60E340006CDEB6 /* NSNull+Protection.h */,
+				4B83B46A1D60E340006CDEB6 /* NSNull+Protection.m */,
+				4B83B46B1D60E340006CDEB6 /* NSString+Utils.h */,
+				4B83B46C1D60E340006CDEB6 /* NSString+Utils.m */,
+				4B83B46D1D60E340006CDEB6 /* NSTimer+Block.h */,
+				4B83B46E1D60E340006CDEB6 /* NSTimer+Block.m */,
+				4B83B46F1D60E340006CDEB6 /* RFBlockAction.h */,
+				4B83B4701D60E340006CDEB6 /* RFBlockAction.m */,
+				4B83B4771D60E340006CDEB6 /* RFPinyinTable.h */,
+				4B83B4781D60E340006CDEB6 /* RFPinyinUtil.h */,
+				4B83B4791D60E340006CDEB6 /* RFPinyinUtil.m */,
+				4B83B47A1D60E340006CDEB6 /* RFPureCUtil.h */,
+				4B83B47B1D60E340006CDEB6 /* RFPureCUtil.m */,
+				4B83B47C1D60E340006CDEB6 /* RFResourceLoader.h */,
+				4B83B47D1D60E340006CDEB6 /* RFResourceLoader.m */,
+				4B83B47E1D60E340006CDEB6 /* RFSwiftUtil.h */,
+				4B83B47F1D60E340006CDEB6 /* RFSwiftUtil.m */,
+				4B83B53F1D60E53A006CDEB6 /* ECLog.h */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4B83B4801D60E340006CDEB6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4B83B4851D60E340006CDEB6 /* ECApplication.h */,
+				4B83B4861D60E340006CDEB6 /* ECApplication.m */,
+				4B83B4871D60E340006CDEB6 /* RFBlockActionSheet.h */,
+				4B83B4881D60E340006CDEB6 /* RFBlockActionSheet.m */,
+				4B83B4891D60E340006CDEB6 /* RFBlockAlertView.h */,
+				4B83B48A1D60E340006CDEB6 /* RFBlockAlertView.m */,
+				4B83B48B1D60E340006CDEB6 /* RFBlockImagePickerViewController.h */,
+				4B83B48C1D60E340006CDEB6 /* RFBlockImagePickerViewController.m */,
+				4B83B4901D60E340006CDEB6 /* RFCollectionViewCell.h */,
+				4B83B4911D60E340006CDEB6 /* RFCollectionViewCell.m */,
+				4B83B4921D60E340006CDEB6 /* RFInputView.h */,
+				4B83B4931D60E340006CDEB6 /* RFInputView.m */,
+				4B83B4941D60E340006CDEB6 /* RFLoadMoreCell.h */,
+				4B83B4951D60E340006CDEB6 /* RFLoadMoreCell.m */,
+				4B83B4991D60E340006CDEB6 /* RFNibUtil.h */,
+				4B83B49A1D60E340006CDEB6 /* RFNibUtil.m */,
+				4B83B49D1D60E340006CDEB6 /* RFPresentationController.h */,
+				4B83B49E1D60E340006CDEB6 /* RFPresentationController.m */,
+				4B83B49F1D60E340006CDEB6 /* RFProgressView.h */,
+				4B83B4A01D60E340006CDEB6 /* RFProgressView.m */,
+				4B83B4A11D60E340006CDEB6 /* RFRootViewController.h */,
+				4B83B4A21D60E340006CDEB6 /* RFRootViewController.m */,
+				4B83B4A31D60E340006CDEB6 /* RFRoundProgressView.h */,
+				4B83B4A41D60E340006CDEB6 /* RFRoundProgressView.m */,
+				4B83B4A51D60E340006CDEB6 /* RFRow.h */,
+				4B83B4A61D60E340006CDEB6 /* RFRow.m */,
+				4B83B4A71D60E340006CDEB6 /* RFSection.h */,
+				4B83B4A81D60E340006CDEB6 /* RFSection.m */,
+				4B83B4A91D60E340006CDEB6 /* RFSidebar.h */,
+				4B83B4AA1D60E340006CDEB6 /* RFTabBarController.h */,
+				4B83B4AB1D60E340006CDEB6 /* RFTabBarController.m */,
+				4B83B4AC1D60E340006CDEB6 /* RFTableViewCell.h */,
+				4B83B4AD1D60E340006CDEB6 /* RFTableViewCell.m */,
+				4B83B4AE1D60E340006CDEB6 /* RFTableViewCellDynamicHeight.h */,
+				4B83B4AF1D60E340006CDEB6 /* RFTableViewController.h */,
+				4B83B4B01D60E340006CDEB6 /* RFTableViewController.m */,
+				4B83B4B91D60E340006CDEB6 /* RFToast.h */,
+				4B83B4BA1D60E340006CDEB6 /* RFToast.m */,
+				4B83B4BB1D60E340006CDEB6 /* RFViewController.h */,
+				4B83B4BC1D60E340006CDEB6 /* RFViewController.m */,
+				4B83B4BD1D60E340006CDEB6 /* RFViewObject.h */,
+				4B83B4BE1D60E340006CDEB6 /* RFViewObject.m */,
+				4B83B4BF1D60E340006CDEB6 /* RFViewUtil.h */,
+				4B83B4C01D60E340006CDEB6 /* RFViewUtil.m */,
+				4B83B4C11D60E340006CDEB6 /* UIBarButtonItem+Utils.h */,
+				4B83B4C21D60E340006CDEB6 /* UIBarButtonItem+Utils.m */,
+				4B83B4C31D60E340006CDEB6 /* UIDevice+Additions.h */,
+				4B83B4C41D60E340006CDEB6 /* UIDevice+Additions.m */,
+				4B83B4C51D60E340006CDEB6 /* UIView+Utils.h */,
+				4B83B4C61D60E340006CDEB6 /* UIView+Utils.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +355,54 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B83B5031D60E340006CDEB6 /* RFBlockImagePickerViewController.h in Headers */,
+				4B83B4E01D60E340006CDEB6 /* NSFileManager+Utils.h in Headers */,
+				4B83B4DE1D60E340006CDEB6 /* NSDictionary+Utils.h in Headers */,
+				4B83B53B1D60E340006CDEB6 /* UIDevice+Additions.h in Headers */,
+				4B83B53D1D60E340006CDEB6 /* UIView+Utils.h in Headers */,
+				4B83B4E21D60E340006CDEB6 /* NSNull+Protection.h in Headers */,
+				4B83B4DC1D60E340006CDEB6 /* NSDate+Utils.h in Headers */,
+				4B83B4E41D60E340006CDEB6 /* NSString+Utils.h in Headers */,
+				4B83B5391D60E340006CDEB6 /* UIBarButtonItem+Utils.h in Headers */,
+				4B83B4DA1D60E340006CDEB6 /* NSData+Utils.h in Headers */,
+				4B83B4FD1D60E340006CDEB6 /* ECApplication.h in Headers */,
+				4B83B4E61D60E340006CDEB6 /* NSTimer+Block.h in Headers */,
+				4B83B4D81D60E340006CDEB6 /* RFJSONUtil.h in Headers */,
+				4B83B5351D60E340006CDEB6 /* RFViewObject.h in Headers */,
+				4B83B50A1D60E340006CDEB6 /* RFInputView.h in Headers */,
+				4B83B4CF1D60E340006CDEB6 /* RFBeanPropertyAnnotation.h in Headers */,
+				4B83B5171D60E340006CDEB6 /* RFProgressView.h in Headers */,
+				4B83B5081D60E340006CDEB6 /* RFCollectionViewCell.h in Headers */,
+				4B83B4D61D60E340006CDEB6 /* RFJSONPropertyAnnotation.h in Headers */,
+				4B83B5241D60E340006CDEB6 /* RFTableViewCell.h in Headers */,
+				4B83B5261D60E340006CDEB6 /* RFTableViewCellDynamicHeight.h in Headers */,
 				4B83B3781D60DFA4006CDEB6 /* ECUtils.h in Headers */,
+				4B83B51F1D60E340006CDEB6 /* RFSection.h in Headers */,
+				4B83B5191D60E340006CDEB6 /* RFRootViewController.h in Headers */,
+				4B83B50C1D60E340006CDEB6 /* RFLoadMoreCell.h in Headers */,
+				4B83B51B1D60E340006CDEB6 /* RFRoundProgressView.h in Headers */,
+				4B83B4FF1D60E340006CDEB6 /* RFBlockActionSheet.h in Headers */,
+				4B83B5221D60E340006CDEB6 /* RFTabBarController.h in Headers */,
+				4B83B4F51D60E340006CDEB6 /* RFResourceLoader.h in Headers */,
+				4B83B4F11D60E340006CDEB6 /* RFPinyinUtil.h in Headers */,
+				4B83B5371D60E340006CDEB6 /* RFViewUtil.h in Headers */,
+				4B83B4D11D60E340006CDEB6 /* RFBeanProtocol.h in Headers */,
+				4B83B4F71D60E340006CDEB6 /* RFSwiftUtil.h in Headers */,
+				4B83B5311D60E340006CDEB6 /* RFToast.h in Headers */,
+				4B83B4F01D60E340006CDEB6 /* RFPinyinTable.h in Headers */,
+				4B83B51D1D60E340006CDEB6 /* RFRow.h in Headers */,
+				4B83B5111D60E340006CDEB6 /* RFNibUtil.h in Headers */,
+				4B83B5331D60E340006CDEB6 /* RFViewController.h in Headers */,
+				4B83B4F31D60E340006CDEB6 /* RFPureCUtil.h in Headers */,
+				4B83B4CD1D60E340006CDEB6 /* RFBeanProperty.h in Headers */,
+				4B83B4E81D60E340006CDEB6 /* RFBlockAction.h in Headers */,
+				4B83B5271D60E340006CDEB6 /* RFTableViewController.h in Headers */,
+				4B83B4D31D60E340006CDEB6 /* RFBeanUtil.h in Headers */,
+				4B83B4D51D60E340006CDEB6 /* RFJSONObject.h in Headers */,
+				4B83B4CB1D60E340006CDEB6 /* RFBeanClass.h in Headers */,
+				4B83B5151D60E340006CDEB6 /* RFPresentationController.h in Headers */,
+				4B83B5211D60E340006CDEB6 /* RFSidebar.h in Headers */,
+				4B83B5011D60E340006CDEB6 /* RFBlockAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +433,7 @@
 		4B83B36B1D60DFA4006CDEB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = kiri;
 				TargetAttributes = {
@@ -130,6 +474,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B83B4DB1D60E340006CDEB6 /* NSData+Utils.m in Sources */,
+				4B83B4E11D60E340006CDEB6 /* NSFileManager+Utils.m in Sources */,
+				4B83B4F41D60E340006CDEB6 /* RFPureCUtil.m in Sources */,
+				4B83B51A1D60E340006CDEB6 /* RFRootViewController.m in Sources */,
+				4B83B5201D60E340006CDEB6 /* RFSection.m in Sources */,
+				4B83B5041D60E340006CDEB6 /* RFBlockImagePickerViewController.m in Sources */,
+				4B83B50B1D60E340006CDEB6 /* RFInputView.m in Sources */,
+				4B83B5381D60E340006CDEB6 /* RFViewUtil.m in Sources */,
+				4B83B4E71D60E340006CDEB6 /* NSTimer+Block.m in Sources */,
+				4B83B4F21D60E340006CDEB6 /* RFPinyinUtil.m in Sources */,
+				4B83B4CC1D60E340006CDEB6 /* RFBeanClass.m in Sources */,
+				4B83B5361D60E340006CDEB6 /* RFViewObject.m in Sources */,
+				4B83B4FE1D60E340006CDEB6 /* ECApplication.m in Sources */,
+				4B83B4E91D60E340006CDEB6 /* RFBlockAction.m in Sources */,
+				4B83B4D21D60E340006CDEB6 /* RFBeanProtocol.m in Sources */,
+				4B83B50D1D60E340006CDEB6 /* RFLoadMoreCell.m in Sources */,
+				4B83B5021D60E340006CDEB6 /* RFBlockAlertView.m in Sources */,
+				4B83B4D01D60E340006CDEB6 /* RFBeanPropertyAnnotation.m in Sources */,
+				4B83B5121D60E340006CDEB6 /* RFNibUtil.m in Sources */,
+				4B83B53E1D60E340006CDEB6 /* UIView+Utils.m in Sources */,
+				4B83B5001D60E340006CDEB6 /* RFBlockActionSheet.m in Sources */,
+				4B83B5181D60E340006CDEB6 /* RFProgressView.m in Sources */,
+				4B83B5251D60E340006CDEB6 /* RFTableViewCell.m in Sources */,
+				4B83B5091D60E340006CDEB6 /* RFCollectionViewCell.m in Sources */,
+				4B83B4CE1D60E340006CDEB6 /* RFBeanProperty.m in Sources */,
+				4B83B4E51D60E340006CDEB6 /* NSString+Utils.m in Sources */,
+				4B83B4D41D60E340006CDEB6 /* RFBeanUtil.m in Sources */,
+				4B83B53C1D60E340006CDEB6 /* UIDevice+Additions.m in Sources */,
+				4B83B51C1D60E340006CDEB6 /* RFRoundProgressView.m in Sources */,
+				4B83B5281D60E340006CDEB6 /* RFTableViewController.m in Sources */,
+				4B83B4E31D60E340006CDEB6 /* NSNull+Protection.m in Sources */,
+				4B83B4D91D60E340006CDEB6 /* RFJSONUtil.m in Sources */,
+				4B83B5321D60E340006CDEB6 /* RFToast.m in Sources */,
+				4B83B4DD1D60E340006CDEB6 /* NSDate+Utils.m in Sources */,
+				4B83B4F81D60E340006CDEB6 /* RFSwiftUtil.m in Sources */,
+				4B83B4F61D60E340006CDEB6 /* RFResourceLoader.m in Sources */,
+				4B83B51E1D60E340006CDEB6 /* RFRow.m in Sources */,
+				4B83B4DF1D60E340006CDEB6 /* NSDictionary+Utils.m in Sources */,
+				4B83B5341D60E340006CDEB6 /* RFViewController.m in Sources */,
+				4B83B5231D60E340006CDEB6 /* RFTabBarController.m in Sources */,
+				4B83B53A1D60E340006CDEB6 /* UIBarButtonItem+Utils.m in Sources */,
+				4B83B4D71D60E340006CDEB6 /* RFJSONPropertyAnnotation.m in Sources */,
+				4B83B5161D60E340006CDEB6 /* RFPresentationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -216,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -235,6 +622,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ECUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiri.ECUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -251,6 +639,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ECUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiri.ECUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +666,7 @@
 				4B83B37E1D60DFA4006CDEB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

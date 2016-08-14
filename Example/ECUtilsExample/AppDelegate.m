@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <ECUtils/ECUtils.h>
 
 @interface AppDelegate ()
 
@@ -14,9 +15,11 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[ECApplication sharedApplication] startWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 

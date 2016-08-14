@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char ECUtilsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ECUtils/PublicHeader.h>
 
-
+#import <ECUtils/ECApplication.h>
