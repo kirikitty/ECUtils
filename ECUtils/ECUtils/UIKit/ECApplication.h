@@ -34,8 +34,6 @@ enum {
 };
 typedef NSUInteger ECSideViewPosition;
 
-typedef NSUInteger ECRetryTaskIdentifier;
-
 extern NSString *const ECApplicationDidReceiveRemotePushNotificaiton;
 extern NSString *const ECApplicationDidReceiveLocalPushNotificaiton;
 
@@ -91,13 +89,11 @@ extern NSString *const ECApplicationDidReceiveLocalPushNotificaiton;
 #pragma mark - Sidebar
 @property (nonatomic) CGAffineTransform leftSidebarTransform;
 @property (nonatomic) CGFloat leftSidebarWidth;
-- (UIViewController *)leftSidebarViewController;
-- (void)setLeftSidebarViewController:(UIViewController *)leftSidebarViewController;
+@property (nonatomic) UIViewController *leftSidebarViewController;
 - (void)setLeftSidebarHidden:(BOOL)hidden animated:(BOOL)animated;
 - (BOOL)isLeftSidebarHidden;
 
-- (UIViewController *)rightSidebarViewController;
-- (void)setRightSidebarViewController:(UIViewController *)rightSidebarViewController;
+@property (nonatomic) UIViewController *rightSidebarViewController;
 - (void)setRightSidebarHidden:(BOOL)hidden animated:(BOOL)animated;
 - (BOOL)isRightSidebarHidden;
 
@@ -108,8 +104,7 @@ extern NSString *const ECApplicationDidReceiveLocalPushNotificaiton;
 #pragma mark - Root
 @property (nonatomic, readonly) UIWindow *window;
 
-- (id)rootViewController;
-- (void)setRootViewController:(UIViewController *)controller;
+@property (nonatomic) UIViewController *rootViewController;
 - (void)setRootViewController:(UIViewController *)controller animated:(BOOL)animated;
 
 #pragma mark - Statusbar
@@ -127,12 +122,6 @@ extern NSString *const ECApplicationDidReceiveLocalPushNotificaiton;
 
 - (BOOL)openRateURL;
 - (BOOL)openAppURL;
-
-/*!
- * @note Must use weak reference in block.
- */
-- (void)addDailyObserver:(id)observer usingBlock:(void (^)(void))block;
-- (void)removeDailyObserver:(id)observer;
 
 - (void)startBackgroundTaskWithTimeout:(NSTimeInterval)timeout;
 

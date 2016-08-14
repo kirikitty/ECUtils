@@ -8,7 +8,7 @@
 
 #import "NSString+Utils.h"
 #import <CommonCrypto/CommonCrypto.h>
-#import "RFPinyinUtil.h"
+#import "ECPinyinUtil.h"
 #import "NSDate+Utils.h"
 #import "NSData+Utils.h"
 
@@ -223,7 +223,7 @@
     for (int i = 0; i < [self length]; i++) {
         unichar c = [self characterAtIndex:i];
         int len;
-        BOOL isPinyin = [RFPinyinUtil unichar2Py:c out:buffer outlen:&len];
+        BOOL isPinyin = [ECPinyinUtil unichar2Py:c out:buffer outlen:&len];
         if (!isPinyin) {
             NSString *tmp = [NSString stringWithCharacters:&c length:1];
             [data appendData:[tmp dataUsingEncoding:NSUTF8StringEncoding]];
@@ -232,7 +232,7 @@
         
         int length = -1;
         int offset = 0;
-        char initial = tolower([RFPinyinUtil firstLetterWithCharacter:c]);
+        char initial = tolower([ECPinyinUtil firstLetterWithCharacter:c]);
         for (int j = 0; j < len; j++) {
             if (buffer[j] == '|') {
                 if (buffer[offset] != initial) {
@@ -263,7 +263,7 @@
     unichar chResult[self.length];
     for (int i = 0; i < self.length; i++) {
         unichar letter = [self characterAtIndex:i];
-        chResult[i] = [RFPinyinUtil firstLetterWithCharacter:letter];
+        chResult[i] = [ECPinyinUtil firstLetterWithCharacter:letter];
         if (!isAll) {
             break;
         }

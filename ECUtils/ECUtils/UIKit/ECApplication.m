@@ -7,9 +7,8 @@
 //
 
 #import "ECApplication.h"
-#import "RFRootViewController.h"
-#import "RFNibUtil.h"
-#import "RFBlockAction.h"
+#import "ECRootViewController.h"
+#import "ECNibUtil.h"
 #import "NSDate+Utils.h"
 
 #define kUserDefaultsLastEnterBackgroundTime @"kUserDefaultsLastEnterBackgroundTime"
@@ -60,8 +59,6 @@ void RFCrashHandler(NSException *e);
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidChangeFrame:) name:UIKeyboardDidChangeFrameNotification object:nil];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dayDidChange:) name:UIApplicationSignificantTimeChangeNotification object:nil];
-
         // default theme
         _statusBarStyle = UIStatusBarStyleDefault;
         _statusBarAnimation = UIStatusBarAnimationSlide;
@@ -85,7 +82,7 @@ void RFCrashHandler(NSException *e);
     id<UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
     delegate.window = [UIWindow new];
     
-    delegate.window.rootViewController = [[RFRootViewController alloc] init];
+    delegate.window.rootViewController = [[ECRootViewController alloc] init];
     [self prepareTheme];
     
     [delegate.window makeKeyAndVisible];
@@ -127,7 +124,6 @@ void RFCrashHandler(NSException *e);
 
 - (void)applicationDidBecomeActive:(NSNotification *)notifcation
 {
-    [self checkDayChange];
 }
 
 #pragma mark - Remote Notification
@@ -149,47 +145,21 @@ void RFCrashHandler(NSException *e);
     }
 }
 
-#pragma mark - Day Change
-- (void)dayDidChange:(NSNotification *)notification
-{
-    [self checkDayChange];
-}
-
-- (void)checkDayChange
-{
-    if ([self.lastDateForDayChange daysSinceDate:[NSDate date]] != 0) {
-        self.lastDateForDayChange = [NSDate date];
-        
-        NSMutableIndexSet *indexes = [NSMutableIndexSet indexSet];
-        [self.dailyObservers enumerateObjectsUsingBlock:^(RFBlockAction *action, NSUInteger idx, BOOL *stop) {
-            if (action.target == nil) {
-                [indexes addIndex:idx];
-            } else {
-                action.block();
-            }
-        }];
-        
-        if (indexes.count > 0) {
-            [self.dailyObservers removeObjectsAtIndexes:indexes];
-        }
-    }
-}
-
 #pragma mark - Application Root
 - (UIWindow *)window
 {
     return [UIApplication sharedApplication].delegate.window;
 }
 
-- (RFRootViewController *)appRootViewController
+- (ECRootViewController *)appRootViewController
 {
-    RFRootViewController *root = (RFRootViewController *)self.window.rootViewController;
-    return [root isKindOfClass:[RFRootViewController class]] ? root : nil;
+    ECRootViewController *root = (ECRootViewController *)self.window.rootViewController;
+    return [root isKindOfClass:[ECRootViewController class]] ? root : nil;
 }
 
 - (id)rootViewController
 {
-    RFRootViewController *root = [self appRootViewController];
+    ECRootViewController *root = [self appRootViewController];
     return root ? root.rootViewController : self.window.rootViewController;
 }
 
@@ -200,7 +170,7 @@ void RFCrashHandler(NSException *e);
 
 - (void)setRootViewController:(UIViewController *)controller animated:(BOOL)animated
 {
-    RFRootViewController *root = [self appRootViewController];
+    ECRootViewController *root = [self appRootViewController];
     if (root) {
         [root setRootViewController:controller animated:animated];
     } else {
@@ -320,11 +290,6 @@ void RFCrashHandler(NSException *e);
     [self.phoneCallView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phone]]]];
 }
 
-- (ECRetryTaskIdentifier)beginRetryTaskWithBlock:(void (^)(void))block test:(BOOL (^)(void))testingBlock
-{
-    return 0;
-}
-
 - (NSString *)version
 {
     if (_version == nil) {
@@ -404,42 +369,6 @@ void RFCrashHandler(NSException *e);
     }
 }
 
-- (void)addDailyObserver:(id)object usingBlock:(void (^)(void))block
-{
-    if (object == nil) {
-        return;
-    }
-    
-    if (![NSThread isMainThread]) {
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [self addDailyObserver:object usingBlock:block];
-        });
-        return;
-    }
-    
-    RFBlockAction *action = [RFBlockAction blockActionWithBlock:block];
-    action.target = object;
-    [self.dailyObservers addObject:action];
-}
-
-- (void)removeDailyObserver:(id)object
-{
-    if (object == nil) {
-        return;
-    }
-    
-    if (![NSThread isMainThread]) {
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            [self removeDailyObserver:object];
-        });
-        return;
-    }
-    
-    [self.dailyObservers removeObjectsAtIndexes:[self.dailyObservers indexesOfObjectsPassingTest:^BOOL(RFBlockAction *obj, NSUInteger idx, BOOL *stop) {
-        return obj.target == object;
-    }]];
-}
-
 - (void)startBackgroundTaskWithTimeout:(NSTimeInterval)timeout
 {
     __block UIBackgroundTaskIdentifier identifier;
@@ -450,8 +379,7 @@ void RFCrashHandler(NSException *e);
         }
     }];
     
-    double delayInSeconds = timeout;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timeout * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
         dispatch_async(dispatch_get_main_queue(), ^{
             if (identifier != UIBackgroundTaskInvalid) {
